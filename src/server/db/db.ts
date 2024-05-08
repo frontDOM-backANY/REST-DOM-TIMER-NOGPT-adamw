@@ -1,10 +1,12 @@
-const db = require('mongoose');
+import db from 'mongoose';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const URI = process.env.MONGO_URI;
 
 async function main() {
-  await db.connect(URI);
+  await db.connect(URI as string);
   console.log('DB connected.');
 }
 
-module.exports = main;
+export default main;
