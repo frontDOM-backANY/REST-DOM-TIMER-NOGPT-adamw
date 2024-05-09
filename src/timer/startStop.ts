@@ -1,15 +1,16 @@
-const button = document.querySelector<HTMLButtonElement>('#counter')!;
+const button = document.createElement('button');
+button.className = 'toggle';
 
 let running = false;
-button.innerHTML = `START`;
+button.innerText = `START`;
 
 const toggle = () => {
   running = !running;
   
   if (running) {
-    button.innerHTML = `STOP`;
+    button.innerText = `STOP`;
   } else {
-    button.innerHTML = `START`
+    button.innerText = `START`
   }
 }
 

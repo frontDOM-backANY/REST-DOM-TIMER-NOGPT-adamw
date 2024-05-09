@@ -55,10 +55,6 @@ h1 {
   filter: drop-shadow(0 0 2em #3178c6aa);
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
@@ -93,4 +89,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/*======Stuff I'm using======*/
+.toggle {
+  padding: 2em;
 }
